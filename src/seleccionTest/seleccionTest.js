@@ -68,7 +68,7 @@ const SeleccionTest = () => {
                     celda3.innerHTML = progreso.data[i] === undefined ? '-' : progreso.data[i].numero_fallos;
 
                     const celda4 = fila.insertCell();
-                    celda4.innerHTML = progreso.data[i] === undefined ? '-' : (progreso.data[i].numero_fallos <= 3 ? 'Aprovado' : 'Suspenso');
+                    celda4.innerHTML = progreso.data[i] === undefined ? '-' : (progreso.data[i].numero_fallos <= 3 ? 'Aprobado' : 'Suspenso');
 
                 } else {
                     const fila = cuerpo.insertRow();
