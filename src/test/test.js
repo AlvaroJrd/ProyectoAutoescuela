@@ -291,7 +291,7 @@ const Test = () => {
           <div id="buttonsContainer" className='pt-2'>
           </div>
           <div className='row mt-3'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="Girl in a jacket" className='mt-3 imagen'/>
+            <img src="https://teoricoporinternet.com/wp-content/uploads/2021/04/Autoescuela-Sparta-31-8-1030x1030.png" alt="Girl in a jacket" className='mt-3 imagen'/>
             <div className='pregunta col px-5 row'>
               <div className='mt-4 row'>
                 <p className='question'>{preguntaActual.numero}.- {preguntaActual.texto}</p>
