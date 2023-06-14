@@ -1,0 +1,46 @@
+.container {
+    background-color: white;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3em;
+  }
+
+  .titulo{
+    text-align: center;
+  }
+
+  .tablaUsuarios {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 94%;
+  }
+
+  .tablaUsuarios th {
+    background-color: #74f5e4;
+  }
+  
+  .tablaUsuarios td, .tablaUsuarios th {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .tablaUsuarios tr:nth-child(even) {
+    background-color: #c8f7f1;
+  }
+
+  .filaVacia{
+    height: 40px;
+  }
+
+  #buttonEdit, #buttonDelete{
+    border: none;
+    background: inherit;
+  }
+
+  #buttonEdit:hover{
+    color: rgb(124, 124, 124);
+  }
+
+  #buttonDelete:hover{
+    color: rgb(247, 56, 56);
+  }

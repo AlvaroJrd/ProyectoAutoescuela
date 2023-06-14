@@ -1,0 +1,87 @@
+.container {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3em;
+  }
+
+  .cuadrado {
+    font-size: 16px;
+    width: 46px;
+    height: 46px;
+    border: none;
+    background: #d3d3d3;
+  }
+
+  .imagen{
+    width: 450px !important;
+    height: 450px !important;
+  }
+  
+  .pregunta{
+    font-size: 20px;
+  }
+  
+  .buttonsControl{
+    border: none;
+    background: #d3d3d3;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .opcion{
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: #d3d3d3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.opcion:hover{
+  background: #b3b3b3;
+}
+
+.respuestaActual{
+  background: #999999 !important;
+}
+
+.preguntaContestada{
+  background: #999999 !important;
+}
+
+.preguntaActual{
+  background: #88e0d5 !important;
+}
+
+.question {
+  height: 2em; 
+  margin-bottom: 1.5em;
+}
+
+.answer {
+  height: 1.5em; /* Establece una altura fija de 1.5em para las respuestas */
+  margin-bottom: 2em; /* Establece un margen inferior de 0.3em */
+}
+
+.correcta{
+  background: #6fe058 !important;
+
+}
+
+.respuestaCorrecta{
+  background: #6fe058 !important;
+
+}
+
+.incorrecta{
+  background: #ff6c6c !important;
+  
+}
+
+.respuestaIncorrecta{
+  background: #ff6c6c !important;
+  
+}

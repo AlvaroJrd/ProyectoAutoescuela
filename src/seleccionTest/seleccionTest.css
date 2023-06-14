@@ -1,0 +1,29 @@
+.container {
+    background-color: white;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3em;
+  }
+
+  .tablaTests {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 94%;
+  }
+
+  .tablaTests th {
+    background-color: #74f5e4;
+  }
+  
+  .tablaTests td, .tablaTests th {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .tablaTests tr:nth-child(even) {
+    background-color: #c8f7f1;
+  }
+
+  .filaVacia{
+    height: 40px;
+  }

@@ -1,0 +1,88 @@
+.login-container {
+    width: 22em;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 777;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #buttonLogin {
+    display: block;
+    width: 280px;
+    padding: 10px;
+    background-color: #F8A8D8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 777;
+  }
+  
+  #buttonLogin:hover {
+    background-color: #FF79DF;
+  }
+
+  .separador{
+    background-color: #C8C8C8;
+  }
+
+  #letras{
+    font-size: 13px;
+    color: #ABABAB;
+  }
+
+  .socialButton{
+    display: block;
+    width: 140px;
+    padding-right: 33px;
+    border: 0.5px solid gray;
+    cursor: pointer;
+    font-weight: 777;
+    color: #686868;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    background-color: #E4E4E4;
+
+  }
+  
+  .input-icon {
+    color: #aaa;
+  }
+  
+  .input-field {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #E4E4E4;
+  }
+  
+  .no-link-style {
+    text-decoration: none;
+    color: inherit;
+  }
+  
