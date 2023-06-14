@@ -5,12 +5,14 @@ import { FaSignOutAlt, FaHome, FaTimes, FaUser, FaFileSignature, FaHammer } from
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const storedUserData = localStorage.getItem('datosUsuario');
+  const datosUsuario = storedUserData ? JSON.parse(storedUserData) : null;
 
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-
-  const navItems = [
+  const navItems = datosUsuario.dni === 'admin' ? 
+  [
     {
       title: 'Inicio',
       path: '/inicio',
@@ -35,7 +37,28 @@ const Header = () => {
       icon: <FaHammer size={25} />,
       cName: 'nav-text'
     }
-  ];
+  ] 
+  :
+  [
+    {
+      title: 'Inicio',
+      path: '/inicio',
+      icon: <FaHome size={25} />,
+      cName: 'nav-text'
+    },
+    {
+      title: 'Tests',
+      path: '/seleccionTest',
+      icon: <FaFileSignature size={25} />,
+      cName: 'nav-text'
+    },
+    {
+      title: 'Perfil',
+      path: '/perfil',
+      icon: <FaUser size={25} />,
+      cName: 'nav-text'
+    }
+  ] ;
 
   const cerrarSesion = () => {
     localStorage.setItem('datosUsuario', JSON.stringify(null));
@@ -57,8 +80,8 @@ const Header = () => {
               </Link>
             </li>
             {navItems.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
+              return (                 
+                  <li key={index} className={item.cName}>
                   <Link to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>

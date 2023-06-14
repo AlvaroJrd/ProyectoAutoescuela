@@ -27,3 +27,8 @@
   .filaVacia{
     height: 40px;
   }
+
+  #buttonTest{
+    border: none;
+    background: inherit;
+  }

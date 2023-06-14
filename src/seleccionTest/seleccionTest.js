@@ -54,7 +54,7 @@ const SeleccionTest = () => {
                     
                     const button = document.createElement("button");
                     button.textContent = 'Test '+response.data[i].numero;
-                    button.id = 'buttonEdit';
+                    button.id = 'buttonTest';
                     button.addEventListener("click", () => {
                         localStorage.setItem('test', JSON.stringify(response.data[i]));
                         navigate('/test');

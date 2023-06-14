@@ -33,4 +33,20 @@ router.post("/", function (req, res, next) {
   });
 });
 
+// PUT de un usuario por su Id
+router.put("/:id", function (req, res, next) {
+  User.findByIdAndUpdate(req.params.id, req.body, function (err, userinfo) {
+    if (err) res.status(500).send(err);
+    else res.sendStatus(200);
+  });
+});
+
+// DELETE de un usuario por su Id
+router.delete("/:id", function (req, res, next) {
+  User.findByIdAndDelete(req.params.id, function (err, userinfo) {
+    if (err) res.status(500).send(err);
+    else res.sendStatus(200);
+  });
+});
+
 module.exports = router;

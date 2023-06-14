@@ -31,16 +31,3 @@
   .filaVacia{
     height: 40px;
   }
-
-  #buttonEdit, #buttonDelete{
-    border: none;
-    background: inherit;
-  }
-
-  #buttonEdit:hover{
-    color: rgb(124, 124, 124);
-  }
-
-  #buttonDelete:hover{
-    color: rgb(247, 56, 56);
-  }

@@ -19,25 +19,16 @@ const Inicio = () => {
             <div className="listaInicio test m-3 col-9">
               <div>
                 <div className='px-3 encabezado'>
-                  <h4>Tests</h4>
+                  <h4>Un poco sobre nosotros</h4>
                 </div>
 
                 <div className='row'>
-                  <div className='col-4'>
-                    <ul className='links'>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=-71_HOZ-Gq8&ab_channel=Igor" target="_blank" rel="noopener noreferrer">Intesivo teorica permiso B</a></li>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=hoVrKLnf-Gc&ab_channel=Formaci%C3%B3nTe%C3%B3ricaVial" target="_blank" rel="noopener noreferrer">Clase tipos de velocidades</a></li>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=ln1d0oR3Q8Y&ab_channel=TE%C3%93RICAVIRTUAL" target="_blank" rel="noopener noreferrer">Clase teorico señales</a></li>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=ln1d0oR3Q8Y&ab_channel=TE%C3%93RICAVIRTUAL" target="_blank" rel="noopener noreferrer">Clase teorico señales</a></li>
-                    </ul>
-                  </div>
-                  <div className='col-4'>
-                    <ul className='links'>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=29ts80H1ZtI&list=PLpJEaE79jkqSHUpgMW8u0e_sJU2qNMaq-&ab_channel=JordiEscoladeConducci%C3%B3" target="_blank" rel="noopener noreferrer">Clase teorica permiso C parte 1</a></li>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=bMgyHrkgiIk&list=PLpJEaE79jkqSHUpgMW8u0e_sJU2qNMaq-&index=2&ab_channel=JordiEscoladeConducci%C3%B3" target="_blank" rel="noopener noreferrer">Clase teorica permiso C parte 2</a></li>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=MiOE1dIXYw0&list=PLpJEaE79jkqSHUpgMW8u0e_sJU2qNMaq-&index=3&ab_channel=JordiEscoladeConducci%C3%B3" target="_blank" rel="noopener noreferrer">Clase teorica permiso C parte 3</a></li>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=MiOE1dIXYw0&list=PLpJEaE79jkqSHUpgMW8u0e_sJU2qNMaq-&index=3&ab_channel=JordiEscoladeConducci%C3%B3" target="_blank" rel="noopener noreferrer">Clase teorica permiso C parte 3</a></li>
-                    </ul>
+                  <div className='col-8'>
+                    <p className='p-3'>
+                    ¡Bienvenidos a nuestra autoescuela! Estamos comprometidos a ayudarte a alcanzar tus metas y obtener tu licencia de conducir. Sabemos que los exámenes pueden ser intimidantes, pero no te preocupes, ¡estamos aquí para guiarte en cada paso del camino!
+
+                    Nuestros tests de conducción están diseñados para evaluar tus conocimientos teóricos y habilidades prácticas en la carretera. Con nuestro enfoque educativo integral, te prepararemos para que te sientas seguro y preparado cuando llegue el momento de enfrentar el examen oficial.
+                    </p>
                   </div>
                   <div className='col-4'>
                     <img src="https://www.autoescuelallorens.com/server/Portal_0011981/img/blogposts/test-autoescuela-como-aprobar-el-examen-teorico-de-conducir_8593.jpg" alt="Girl in a jacket" className='w-100 my-1'/>
@@ -51,13 +42,11 @@ const Inicio = () => {
 
                 <div className='row'>
                   <div className='col-4'>
-                  {datosUsuario.tipo_carnet === 'B' && (
                     <ul className='links'>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=D7QFHjid6rg&t=1s&ab_channel=JordiEscoladeConducci%C3%B3" target="_blank" rel="noopener noreferrer">Clase permiso B Tema 1</a></li>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=yGOoG9NCFBA&ab_channel=JordiEscoladeConducci%C3%B3" target="_blank" rel="noopener noreferrer">Clase permiso B Tema 2 parte 1</a></li>
-                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=56dR_JjuXLY&ab_channel=JordiEscoladeConducci%C3%B3" target="_blank" rel="noopener noreferrer">Clase permiso B Tema 2 parte 2</a></li>
+                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=hoVrKLnf-Gc&t=2s&ab_channel=Formaci%C3%B3nTe%C3%B3ricaVial" target="_blank" rel="noopener noreferrer">Clase velocidades</a></li>
+                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=-Bkf6lMkZbk&ab_channel=EDUCACI%C3%93NVIALF%C3%81CILYSENCILLA" target="_blank" rel="noopener noreferrer">Clase seguridad vial</a></li>
+                      <li className='mt-3'><a href="https://www.youtube.com/watch?v=kfMGaffhaBg&ab_channel=autoescuelacom" target="_blank" rel="noopener noreferrer">Clase señalizacion</a></li>
                     </ul>
-                  )}
                   </div>
                   <div className='col-4'>
                   {datosUsuario.tipo_carnet === 'B' && (
@@ -93,16 +82,16 @@ const Inicio = () => {
               <h3>Noticias</h3>
               <div className='contenidoNoticias col p-4 py-2'>
                 <div className='noticia p-2 row mb-2 '>
-                  <h4>Noticia 1</h4>
-                  <p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                  <h5>Choca un camion</h5>
+                  <p>El pasado sabado chocó un camion de 1 tonelada en el puente direccion Cádiz...</p>
                 </div>
                 <div className='noticia p-2 row mb-2'>
-                  <h4>Noticia 1</h4>
-                  <p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                  <h5>Nuevos radares</h5>
+                  <p>Con el cambio de politicas en la DGT, están planteandose poner...</p>
                 </div>
                 <div className='noticia p-2 row mb-2'>
-                  <h4>Noticia 1</h4>
-                  <p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                  <h5>Preguntas actuales</h5>
+                  <p>Estas 15 preguntas están entrando ultimamente en los examenes de la...</p>
                 </div>           
               </div>
             </div>

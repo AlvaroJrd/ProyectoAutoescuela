@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './login.css';
 import axios from 'axios';
-import { FaUser, FaLock, FaFacebook } from 'react-icons/fa';
+import { FaUser, FaLock, FaFacebook, FaTimes } from 'react-icons/fa';
 import { SiGoogle } from 'react-icons/si';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -11,7 +11,12 @@ const Login = () => {
   const [dni, setDni] = useState('');
   const [password, setPassword] = useState('');
   const [datosUsuario, setDatosUsuario] = useState({});
+  const [modal, setModal] = useState(false);
   const navigate = useNavigate();
+
+  const toggleModal = () => {
+    setModal(false);
+  };
 
   useEffect(() => {
     console.log(datosUsuario); // Se ejecuta cuando datosUsuario cambia
@@ -34,6 +39,8 @@ const Login = () => {
           setDatosUsuario(response.data); 
           localStorage.setItem('datosUsuario', JSON.stringify(response.data));
           navigate("/inicio");
+        } else {
+          setModal(true);
         }
       })
       .catch((error) => {
@@ -92,6 +99,21 @@ const Login = () => {
         <button className='socialButton small' type="button"><SiGoogle size={20} color="#db4a39" className='m-2'/> Google</button>
       </div>
       <p className='mt-3 small text-center'><Link to="/register" className="no-link-style">¿No tienes cuenta? Registrate</Link></p>
+      
+      {modal && (
+        <div className="popup">
+          <div onClick={toggleModal} className="overlay"></div>
+          <div className="popup-content">
+            <h2 className='titulo'>Datos incorrectos</h2>
+            <p className='p-4 titulo'>
+              Los datos son erroneos. Por favor compruebalos e intentalo de nuevo
+            </p>
+            <button className="close-popup" onClick={toggleModal}>
+              <FaTimes size={20} />
+            </button>
+          </div>
+        </div>
+        )}
     </div>
   );
 };
